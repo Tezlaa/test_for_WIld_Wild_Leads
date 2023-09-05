@@ -1,5 +1,6 @@
-##### Local startup: `docker-compose up --build`
-##### On AWS: http://16.16.211.2:8000/
+>### Local startup: `docker-compose up --build`
+>### On AWS: http://16.16.211.2:8000/
+
 After starting, three users were created in the database:
 1. Login: `User 1`
 Password: `root`
