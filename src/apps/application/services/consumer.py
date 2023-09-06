@@ -12,8 +12,8 @@ def get_orders(employee) -> QuerySet[Order]:
     return Order.objects.filter(employee=employee)
 
 
-def delete_task(task_id: int) -> dict:
-    instance = get_object_or_404(Order, pk=task_id)
+def delete_task(task_pk: int) -> dict:
+    instance = get_object_or_404(Order, pk=task_pk)
     result = {
         'pk': instance.pk,
         'task_id': instance.task_id,
