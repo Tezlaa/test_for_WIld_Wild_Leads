@@ -8,7 +8,7 @@ from apps.application.services.utils import create_employees
 
 class Employee(AbstractUser):
     """
-    Castomize Django user. Added porbation time and his position.
+    Castomize Django user. Added porbation and his position.
     """
     probation = models.BooleanField(default=False)
     position = models.CharField(verbose_name='Position', max_length=164, blank=True, null=True)
